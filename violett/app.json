@@ -1,0 +1,1 @@
+{"expo":{"name":"Violett","slug":"violett","version":"0.1.0","orientation":"portrait","scheme":"violett","userInterfaceStyle":"light","plugins":["expo-router"],"ios":{"supportsTablet":true},"android":{"adaptiveIcon":{"backgroundColor":"#6D28D9"}},"web":{"bundler":"metro"},"experiments":{"typedRoutes":true}}}
