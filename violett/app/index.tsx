@@ -8,7 +8,13 @@ const products:Product[]=[
  {id:'1',name:'Zapato efecto pelo negro',brand:'Catálogo conectado',price:89.99,category:'Calzado',color:'Negro',image:'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800',store:'Tienda conectada',url:'https://www.awin.com/'},
  {id:'2',name:'Camiseta blanca de algodón',brand:'Catálogo conectado',price:29.99,category:'Ropa',color:'Blanco',image:'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800',store:'Tienda conectada',url:'https://www.awin.com/'},
  {id:'3',name:'Bolso dorado de fiesta',brand:'Catálogo conectado',price:64.99,category:'Bolsos',color:'Dorado',image:'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800',store:'Tienda conectada',url:'https://www.awin.com/'}
-];
+...url:'https://www.awin.com/'},
+ {id:'4',name:'Vestido negro elegante',brand:'Catálogo conectado',price:49.99,category:'Ropa',color:'Negro',image:'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800',store:'Tienda conectada',url:'https://www.awin.com/'},
+ {id:'5',name:'Zapatillas deportivas blancas',brand:'Catálogo conectado',price:59.99,category:'Calzado',color:'Blanco',image:'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800',store:'Tienda conectada',url:'https://www.awin.com/'},
+ {id:'6',name:'Bolso negro de hombro',brand:'Catálogo conectado',price:39.99,category:'Bolsos',color:'Negro',image:'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800',store:'Tienda conectada',url:'https://www.awin.com/'},
+ {id:'7',name:'Camiseta negra básica',brand:'Catálogo conectado',price:19.99,category:'Ropa',color:'Negro',image:'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800',store:'Tienda conectada',url:'https://www.awin.com/'},
+ {id:'8',name:'Botín negro de mujer',brand:'Catálogo conectado',price:79.99,category:'Calzado',color:'Negro',image:'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800',store:'Tienda conectada',url:'https://www.awin.com/'}
+];];
 const categories=['Calzado','Ropa','Bolsos','Accesorios'];
 function ProductCard({p,onFav}:{p:Product;onFav:()=>void}){return <View style={s.card}><Image source={{uri:p.image}} style={s.pic}/><View style={s.cardBody}><Text style={s.brand}>{p.brand}</Text><Text style={s.pname}>{p.name}</Text><Text style={s.price}>{p.price.toFixed(2).replace('.',',')} €</Text><View style={s.row}><Pressable style={s.store} onPress={()=>Linking.openURL(p.url)}><Text style={s.storeText}>Ver en tienda</Text></Pressable><Pressable onPress={onFav}><Ionicons name="heart-outline" size={23} color="#6D28D9"/></Pressable></View></View></View>}
 export default function Home(){
